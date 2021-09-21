@@ -1,0 +1,20 @@
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  gap: 120px;
+}
+
+.formsContainer {
+  padding: 15px;
+}
+
+.contactsContainer {
+  padding: 15px;
+}

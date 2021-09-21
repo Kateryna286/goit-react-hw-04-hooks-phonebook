@@ -1,0 +1,17 @@
+.itemText {
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.itemName {
+  font-weight: 600;
+  margin-right: 15px;
+}
