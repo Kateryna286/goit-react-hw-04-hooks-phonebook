@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
-export default function InputForm({onSubmit}) {
+export default function InputForm({ onSubmit }) {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
   const handleChange = event => {
-    const {name, value} = event.target;
-    
+    const { name, value } = event.target;
+
     switch (name) {
       case 'name':
         setName(value);
@@ -23,15 +23,14 @@ export default function InputForm({onSubmit}) {
   const handleSubmit = event => {
     event.preventDefault();
 
-    onSubmit(name, number); 
-    //onSubmit(number);
+    onSubmit(name, number);
 
     resetForm();
   };
 
   const resetForm = () => {
     setName('');
-    setNumber(''); 
+    setNumber('');
   };
 
   return (
