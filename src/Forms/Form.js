@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import { v4 as uuidv4 } from 'uuid';
 
 class Form extends Component {
   state = {
@@ -14,6 +13,9 @@ class Form extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+
+    console.log('This props:', this.props);
+    console.log('This state:', this.state);
 
     this.props.onSubmit(this.state);
 
